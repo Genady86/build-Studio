@@ -1,0 +1,6 @@
+{
+  "name": "Bild-Studio",
+  "description": "Dunkle Web-App zum Eingeben von Bild-Prompts und Anzeigen erzeugter Platzhalterbilder in einer Galerie.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
