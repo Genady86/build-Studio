@@ -7,6 +7,7 @@ import {useEffect, useRef, useState, type FormEvent, type KeyboardEvent} from 'r
 import {Gem, ImagePlus, Loader2, Moon, RotateCcw, Sun} from 'lucide-react';
 import {GalleryTile} from './components/GalleryTile';
 import {LightboxModal} from './components/LightboxModal';
+import {BackendStatus} from './components/BackendStatus';
 import {
   INITIAL_GALLERY_ITEMS,
   PLACEHOLDER_POOL,
@@ -161,6 +162,9 @@ export default function App() {
       </header>
 
       <main className="mx-auto max-w-6xl px-6 py-10 sm:py-14">
+        <div className="mb-5 flex justify-end">
+          <BackendStatus />
+        </div>
         {/* Bereich für die Prompt-Eingabe, Design-Umschaltung und den Generieren-Button */}
         <section id="erstellen" aria-labelledby="erstellen-titel" className="mb-14">
           <div className="mb-6 flex flex-wrap items-start justify-between gap-6">
